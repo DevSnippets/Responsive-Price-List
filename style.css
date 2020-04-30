@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.10);
+    min-width: 300px;
+    width: 30%;
+    padding: 2rem;
+    margin: 10px;
+    background-color: white;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    position: relative;
+    border-radius: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 200px;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -5px;
+    z-index: -1;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    border-radius: 20px;
+}
+
+h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    /* background: linear-gradient(to right, #ffafbd , #ffc3a0); */
+    border-radius: 20px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.card:nth-child(1)>div>h1 {
+    background-color: #2cbc63;
+}
+
+.card:nth-child(2)>div>h1 {
+    background-color: #ea4962;
+}
+
+.card:nth-child(3)>div>h1 {
+    background-color: #774edf;
+}
+
+p {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.price {
+    font-weight: 800;
+}
+
+span {
+    font-weight: 400;
+}
